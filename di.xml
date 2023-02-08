@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+ <type name="Magento\Catalog\Model\Product">
+        <plugin name="change_product_name" type="Bluethinkinc\CustomWidget\Plugin\ChangeProductName" />
+    </type>
+
+     <type name="Magento\Customer\Controller\Account\LoginPost">
+        <plugin name="change_account_url" type="Bluethinkinc\CustomWidget\Plugin\LoginRedirect" />
+    </type>
+
+</config>
